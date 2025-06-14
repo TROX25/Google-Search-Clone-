@@ -1,0 +1,80 @@
+
+
+.mylink1 {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+}
+
+.mylink2 {
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  margin: 10px;
+}
+
+/* CENTROWANIE DIVA */
+.center-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
+
+html {
+  font-size: 30px; /* domyślnie 16px */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="submit"] {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  width: 500px;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden; /* To jest kluczowe — obetnie rogi inputów */
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input[value="I’m Feeling Lucky"] {
+  width: 200px;
+  display: block;  /* element traktowany jako blok (inaczej auto nie zadziala)*/
+  margin: 0 auto;  /* dzieki temu przycisk jest na srodku diva*/
+}
+
+input[value*="Search"] { /* Dzięki value* działa to jak %Search% z SQL*/
+  width: 300px;
+  display: block;  /* element traktowany jako blok (inaczej auto nie zadziala)*/
+  margin: 0 auto;  /* dzieki temu przycisk jest na srodku diva*/
+}
+
+
+
+input[type="submit"] {
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  overflow: hidden; /* To jest kluczowe — obetnie rogi inputów */
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+
+
+label {
+    text-align: left;
+    padding-top: 5px;
+    font-size: 24px;
+  }
